@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import { isMobile } from 'react-device-detect';
 import { cammy, pippa } from './contentObjects';
-import PippaGymPhoto from '../Media/PippaGymPhoto.jpg'
+import PippaGymPhoto from '../Media/PippaGymPhoto.jpeg'
 import CammyGymPhoto from '../Media/CammyGymPhoto.jpg'
 
 function Who() {
@@ -84,8 +84,7 @@ function Who() {
 function getDescription(person) {
   return (
     <>
-      <h2>Name: {person.name}</h2>
-      <h3>Job: {person.job} at {person.company}</h3>
+      <h2>{person.name}</h2>
       <p>{person.description}</p>
     </>
   )
