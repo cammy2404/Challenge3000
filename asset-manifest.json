@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/Challenge3000/static/css/main.62e81acb.css",
-    "main.js": "/Challenge3000/static/js/main.5ff82a55.js",
+    "main.js": "/Challenge3000/static/js/main.47558853.js",
+    "static/media/PippaGymPhoto.jpg": "/Challenge3000/static/media/PippaGymPhoto.6ca35572147d59aee340.jpg",
+    "static/media/CammyGymPhoto.jpg": "/Challenge3000/static/media/CammyGymPhoto.0aad59c1e33fd9909436.jpg",
     "static/media/SAMH.png": "/Challenge3000/static/media/SAMH.c7fd0b8342b6ad3b92a1.png",
     "index.html": "/Challenge3000/index.html",
     "main.62e81acb.css.map": "/Challenge3000/static/css/main.62e81acb.css.map",
-    "main.5ff82a55.js.map": "/Challenge3000/static/js/main.5ff82a55.js.map"
+    "main.47558853.js.map": "/Challenge3000/static/js/main.47558853.js.map"
   },
   "entrypoints": [
     "static/css/main.62e81acb.css",
-    "static/js/main.5ff82a55.js"
+    "static/js/main.47558853.js"
   ]
 }
