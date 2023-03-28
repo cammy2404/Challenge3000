@@ -14,20 +14,21 @@ function Challenge3000() {
   }
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Stack direction="column"
-        justifyContent="space-between"
-        alignItems="flex-start"
-        spacing={2}
-        height='100vh'
-      >
-        <div style={style_top}>
-          <Header />
-          <Content />
-        </div>
-        <Footer />
-      </Stack>
-    </Box>
+    <Content />
+    // <Box sx={{ width: '100%' }}>
+    //   <Stack direction="column"
+    //     justifyContent="space-between"
+    //     alignItems="flex-start"
+    //     spacing={2}
+    //     height='100vh'
+    //   >
+    //     <div style={style_top}>
+    //       <Header />
+    //       <Content />
+    //     </div>
+    //     <Footer />
+    //   </Stack>
+    // </Box>
   )
 
 }

@@ -3,6 +3,9 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import samhlogo from './Media/SAMH.png';
+import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -34,23 +37,38 @@ function Footer() {
           >
             <Grid item xs={12} sm={3} style={{ textAlign: 'left' }}>
               <h3>Quick Links</h3>
-              <h4>About</h4>
-              <h4>Who?</h4>
-              <h4>What?</h4>
-              <h4>When?</h4>
-              <h4>Why?</h4>
+              <h4><Link to="/Challenge3000/who">Who?</Link></h4>
+              <h4><Link to="/Challenge3000/what">What?</Link></h4>
+              <h4><Link to="/Challenge3000/when">When?</Link></h4>
+              <h4><Link to="/Challenge3000/why">Why?</Link></h4>
+              <h4><Link to="/Challenge3000/socialmedia">Social Media</Link></h4>
             </Grid>
 
             <Grid item xs={12} sm={3} style={{ textAlign: 'left' }}>
               <h3>Other Links</h3>
-              <h4>SAMH</h4>
-              <h4>ZeoFitness</h4>
-              <h4>Donation Page</h4>
-              <h4>Instagram Account</h4>
+              <a href='https://www.samh.org.uk/' target="_blank" rel="noopener noreferrer">
+                <h4>SAMH</h4>
+              </a>
+              {/* <h4>ZeoFitness</h4> */}
+              <a href='https://www.justgiving.com/page/cameron-mcneill-challenge3000' target="_blank" rel="noopener noreferrer">
+                <h4>Donation Page</h4>
+              </a>
+              <a href='https://www.instagram.com/candpatthegym/' target="_blank" rel="noopener noreferrer">
+                <h4>Instagram Account</h4>
+              </a>
             </Grid>
 
             <Grid item xs={12} sm={6}>
-              <h3>SAMH Logo | Zeo Fitness Logo</h3>
+              <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={10}
+                paddingTop={5}
+              >
+                <img src={samhlogo} alt='SAMH Logo' style={{ width: '25%' }} ></img>
+                {/* <img src={samhlogo} alt='SAMH Logo' style={{ width: '25%' }} ></img> */}
+              </Stack>
             </Grid>
 
 
