@@ -23,6 +23,10 @@ export const mainMenu = [
         displayText: "Supporting"
     },
     {
+        link: "/Challenge3000/progress",
+        displayText: "Progress"
+    },
+    {
         link: "/Challenge3000/socialmedia",
         displayText: "Social Media"
     }

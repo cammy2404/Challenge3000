@@ -13,3 +13,16 @@ export const pippa = {
     "Pippa description"
   ]
 }
+
+export const challengeStats = [
+  {
+    name: "Cammy",
+    daily: 100,
+    completed: 0
+  },
+  {
+    name: "Pippa",
+    daily: 20,
+    completed: 0
+  }
+]

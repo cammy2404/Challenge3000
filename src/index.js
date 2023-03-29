@@ -10,6 +10,8 @@ import What from './App/Content/What';
 import When from './App/Content/When';
 import Why from './App/Content/Why';
 import SocialMedia from './App/SocialMedia';
+import HomePage from './HomePage';
+import Progress from './App/Content/Progress';
 
 export default function App() {
   console.log("THING")
@@ -17,10 +19,11 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="Challenge3000/" element={<Layout />}>
-          <Route index element={<Content />} />
+          <Route index element={<HomePage />} />
           <Route path="participants" element={<Who />} />
           <Route path="challenge" element={<><What /><When /></>} />
           <Route path="supporting" element={<Why />} />
+          <Route path="progress" element={<Progress />} />
           <Route path="socialmedia" element={<SocialMedia />} />
         </Route>
       </Routes>
