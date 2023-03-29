@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Challenge3000/static/css/main.62e81acb.css",
-    "main.js": "/Challenge3000/static/js/main.7de291fc.js",
+    "main.css": "/Challenge3000/static/css/main.7930de0e.css",
+    "main.js": "/Challenge3000/static/js/main.2f0ee6d9.js",
     "static/media/PippaGymPhoto.jpeg": "/Challenge3000/static/media/PippaGymPhoto.0e835e85516257039ecf.jpeg",
     "static/media/CammyGymPhoto.jpg": "/Challenge3000/static/media/CammyGymPhoto.0aad59c1e33fd9909436.jpg",
+    "static/media/charityIcon.png": "/Challenge3000/static/media/charityIcon.fa0eb52069975eed7e2e.png",
+    "static/media/pushup02.png": "/Challenge3000/static/media/pushup02.1c7e25f6199d2247524b.png",
     "static/media/SAMH.png": "/Challenge3000/static/media/SAMH.c7fd0b8342b6ad3b92a1.png",
     "index.html": "/Challenge3000/index.html",
-    "main.62e81acb.css.map": "/Challenge3000/static/css/main.62e81acb.css.map",
-    "main.7de291fc.js.map": "/Challenge3000/static/js/main.7de291fc.js.map"
+    "main.7930de0e.css.map": "/Challenge3000/static/css/main.7930de0e.css.map",
+    "main.2f0ee6d9.js.map": "/Challenge3000/static/js/main.2f0ee6d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e81acb.css",
-    "static/js/main.7de291fc.js"
+    "static/css/main.7930de0e.css",
+    "static/js/main.2f0ee6d9.js"
   ]
 }
