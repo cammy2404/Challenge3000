@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import { mainMenu } from './Content/contentLinks';
 
 function HeaderMenuList() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -35,11 +36,9 @@ function HeaderMenuList() {
           
         }}
       >
-        <Link to="/Challenge3000/who"><MenuItem onClick={handleClose}>Who?</MenuItem></Link>
-        <Link to="/Challenge3000/what"><MenuItem onClick={handleClose}>What?</MenuItem></Link>
-        <Link to="/Challenge3000/when"><MenuItem onClick={handleClose}>When?</MenuItem></Link>
-        <Link to="/Challenge3000/why"><MenuItem onClick={handleClose}>Why?</MenuItem></Link>
-        <Link to="/Challenge3000/socialmedia"><MenuItem onClick={handleClose}>Social Media</MenuItem></Link>
+        {mainMenu.map(menuItem => (
+          <Link to={menuItem.link}><MenuItem onClick={handleClose}>{menuItem.displayText}</MenuItem></Link>
+        ))}
       </Menu>
     </div>
   );

@@ -22,7 +22,7 @@ function Who() {
     // MOBILE VIEW
     return (
       <>
-        <h1>Who?</h1>
+        <h1 style={{textAlign: 'center'}}>Participants</h1>
         <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={12} sm={4}>
             <Item style={{height:'250px'}}>
@@ -52,27 +52,27 @@ function Who() {
     // DESKTOP VIEW
     return (
       <>
-        <h1>Who?</h1>
-        <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <h1 style={{textAlign: 'center'}}>Participants</h1>
+        <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }} alignItems="center">
           <Grid item xs={12} sm={4}>
-            <Item style={{height:'250px'}}>
-              <img src={CammyGymPhoto} alt="Cammy gym photo" style={{ height: '250px'}} ></img>
+            <Item>
+              <img src={CammyGymPhoto} alt="Cammy gym photo" style={{ width: '100%' }} id="img01"></img>
             </Item>
           </Grid>
           <Grid item xs={12} sm={8}>
-            <Item style={{ textAlign: 'left', minHeight: '250px' }}>
+            <Item style={{ textAlign: 'left' }}>
               {getDescription(cammy)}
             </Item>
           </Grid>
           
           <Grid item xs={12} sm={8}>
-            <Item style={{ textAlign: 'left', minHeight: '250px' }}>
+            <Item style={{ textAlign: 'left' }}>
               {getDescription(pippa)}
             </Item>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Item style={{height:'250px'}}>
-              <img src={PippaGymPhoto} alt="Pippa gym photo" style={{ height: '250px'}} ></img>
+            <Item>
+              <img src={PippaGymPhoto} alt="Pippa gym photo" style={{ width: '100%' }} ></img>
             </Item>
           </Grid>
         </Grid>
@@ -85,7 +85,9 @@ function getDescription(person) {
   return (
     <>
       <h2>{person.name}</h2>
-      <p>{person.description}</p>
+      {person.description.map(line => (
+        <p>{line}</p>
+      ))}
     </>
   )
 }

@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Footer from "./App/Footer";
 import Header from "./App/Header";
+import DonateNow from "./App/DonateNow";
 
 const Layout = () => {
   
@@ -30,6 +31,7 @@ const Layout = () => {
           <div style={style_top}>
             <Header />
             <div style={style_content}>
+              <DonateNow />
               <Outlet />
             </div>
           </div>

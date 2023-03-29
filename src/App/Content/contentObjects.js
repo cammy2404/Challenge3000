@@ -1,9 +1,15 @@
 export const cammy = {
   name: "Cammy",
-  description: "After finishing univeristy, I got myself a software engineering job in an office, this was great as it was what I had been working towards for years. However it meant that I left my previous job, working in a kitchen, which was lot more active than sitting at my desk 40 hours a week. After about a year I had put on some weight and got myself in a pretty bad place mentally. I decided to get back into the gym and start working out. This was the best decision I made in a long time. I felt healthier both physically and mentally."
+  description: [
+    "Hey there, I'm Cammy and I created this challenge because it merged two things, I'm passionate about, fitness and supporting mental health. I've struggled with my mental health for a long time, but every time I've tried to get help it's even more of a struggle! Waiting lists are years long and getting pointed to the same self-help advice over and over again (which I've tried multiple times to no avail) is quite defeating.",
+    "A year into my first office job, I had put on a fair bit of weight, which just made things worse for me. So, I decided to change something. I started going to a personal trainer who helped me get back into the gym and keep an eye on what I was eating. Since starting with him, I've lost some weight, built some muscle, and most importantly, improved my mental health.",
+    "Now that I'm in a much better place, I want to do my part to help those who can't just go to the gym to find a better place."
+  ]
 }
 
 export const pippa = {
   name: "Pippa",
-  description: "Pippa description"
+  description: [
+    "Pippa description"
+  ]
 }

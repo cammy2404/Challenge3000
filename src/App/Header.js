@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import { isMobile } from 'react-device-detect';
 import HeaderMenuList from './HeaderMenuList';
 import { Link } from "react-router-dom";
+import { mainMenu } from './Content/contentLinks';
 
 function Header() {
 
@@ -32,11 +33,9 @@ function Header() {
             alignItems="center"
             spacing={10}
           >
-            <h3><Link to="/Challenge3000/who">Who?</Link></h3>
-            <h3><Link to="/Challenge3000/what">What?</Link></h3>
-            <h3><Link to="/Challenge3000/when">When?</Link></h3>
-            <h3><Link to="/Challenge3000/why">Why?</Link></h3>
-            <h3><Link to="/Challenge3000/socialmedia">Social Media</Link></h3>
+            {mainMenu.map(menuItem => (
+              <h3><Link to={menuItem.link}>{menuItem.displayText}</Link></h3>
+            ))}
           </Stack>
         }
       </div>

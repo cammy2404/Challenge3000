@@ -4,6 +4,7 @@ import '../Common.css';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import samhlogo from '../Media/SAMH.png';
+import { samhLink } from './contentLinks';
 
 function Why() {
 
@@ -20,20 +21,25 @@ function Why() {
 
   return (
     <>
-      <h1>Why?</h1>
-        <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <h1 style={{textAlign: 'center'}}>Who are we supporting?</h1>
+        <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }} alignItems='center'>
           <Grid item xs={12} sm={8}>
             <Item style={{ minHeight: '250px' }}>
-            <a href='https://www.samh.org.uk/' target="_blank" rel="noopener noreferrer">
+            <a href={samhLink} target="_blank" rel="noopener noreferrer">
                 <h1>Scottish Association for Mental Health</h1>
               </a>
               <h3>{header}</h3>
               <p>{body}</p>
+              <a href={samhLink} target="_blank" rel="noopener noreferrer" className='highlight'>
+                <p>Find out more about SAMH here</p>
+              </a>
             </Item>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Item style={{height:'250px'}}>
-              <img src={samhlogo} alt="SAMH Logo" style={{ height: '250px' }}></img>
+            <Item>
+              <a href={samhLink} target="_blank" rel="noopener noreferrer" className='highlight'>
+                <img src={samhlogo} alt="SAMH Logo" style={{ width: '100%' }}></img>
+              </a>
             </Item>
           </Grid>
         </Grid>

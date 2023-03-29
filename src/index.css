@@ -16,3 +16,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+a.highlight {
+  color: #5b9aa0;
+}

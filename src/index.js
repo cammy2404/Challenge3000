@@ -9,6 +9,7 @@ import Who from './App/Content/Who';
 import What from './App/Content/What';
 import When from './App/Content/When';
 import Why from './App/Content/Why';
+import SocialMedia from './App/SocialMedia';
 
 export default function App() {
   console.log("THING")
@@ -17,10 +18,10 @@ export default function App() {
       <Routes>
         <Route path="Challenge3000/" element={<Layout />}>
           <Route index element={<Content />} />
-          <Route path="who" element={<Who />} />
-          <Route path="what" element={<What />} />
-          <Route path="when" element={<When />} />
-          <Route path="why" element={<Why />} />
+          <Route path="participants" element={<Who />} />
+          <Route path="challenge" element={<><What /><When /></>} />
+          <Route path="supporting" element={<Why />} />
+          <Route path="socialmedia" element={<SocialMedia />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -31,6 +32,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <Challenge3000 /> */}
   </React.StrictMode>
 );

@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import samhlogo from './Media/SAMH.png';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
+import { justGivingLink, samhLink, instagramLink, mainMenu } from './Content/contentLinks';
 
 function Footer() {
 
@@ -37,23 +38,21 @@ function Footer() {
           >
             <Grid item xs={12} sm={3} style={{ textAlign: 'left' }}>
               <h3>Quick Links</h3>
-              <h4><Link to="/Challenge3000/who">Who?</Link></h4>
-              <h4><Link to="/Challenge3000/what">What?</Link></h4>
-              <h4><Link to="/Challenge3000/when">When?</Link></h4>
-              <h4><Link to="/Challenge3000/why">Why?</Link></h4>
-              <h4><Link to="/Challenge3000/socialmedia">Social Media</Link></h4>
+              {mainMenu.map(menuItem => (
+                <h4><Link to={menuItem.link}>{menuItem.displayText}</Link></h4>
+              ))}
             </Grid>
 
             <Grid item xs={12} sm={3} style={{ textAlign: 'left' }}>
               <h3>Other Links</h3>
-              <a href='https://www.samh.org.uk/' target="_blank" rel="noopener noreferrer">
+              <a href={samhLink} target="_blank" rel="noopener noreferrer">
                 <h4>SAMH</h4>
               </a>
               {/* <h4>ZeoFitness</h4> */}
-              <a href='https://www.justgiving.com/page/cameron-mcneill-challenge3000' target="_blank" rel="noopener noreferrer">
+              <a href={justGivingLink} target="_blank" rel="noopener noreferrer">
                 <h4>Donation Page</h4>
               </a>
-              <a href='https://www.instagram.com/candpatthegym/' target="_blank" rel="noopener noreferrer">
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer">
                 <h4>Instagram Account</h4>
               </a>
             </Grid>
@@ -67,11 +66,8 @@ function Footer() {
                 paddingTop={5}
               >
                 <img src={samhlogo} alt='SAMH Logo' style={{ width: '25%' }} ></img>
-                {/* <img src={samhlogo} alt='SAMH Logo' style={{ width: '25%' }} ></img> */}
               </Stack>
             </Grid>
-
-
           </Grid>
         </div>
       </>
