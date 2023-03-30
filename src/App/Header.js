@@ -5,6 +5,7 @@ import { isMobile } from 'react-device-detect';
 import HeaderMenuList from './HeaderMenuList';
 import { Link } from "react-router-dom";
 import { mainMenu } from './Content/contentLinks';
+import { Grid } from '@mui/material';
 
 function Header() {
 
@@ -26,17 +27,13 @@ function Header() {
         }
 
         { !isMobile &&
-          <Stack
-            direction="row"
-            divider={<Divider orientation="vertical" flexItem />}
-            justifyContent="center"
-            alignItems="center"
-            spacing={10}
-          >
+          <Grid container>
             {mainMenu.map(menuItem => (
-              <h3><Link to={menuItem.link}>{menuItem.displayText}</Link></h3>
+              <Grid item xs={12} sm={6} md={4} lg={2}>
+                <h3><Link to={menuItem.link}>{menuItem.displayText}</Link></h3>
+              </Grid>
             ))}
-          </Stack>
+          </Grid>
         }
       </div>
     </>

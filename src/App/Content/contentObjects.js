@@ -10,7 +10,10 @@ export const cammy = {
 export const pippa = {
   name: "Pippa",
   description: [
-    "Pippa description"
+    "Hi, I’m Pippa!! I decided to join this challenge alongside Cammy as fitness is something which I am very passionate about and has improved my mental health significantly.",
+    "During University, I found myself to be very active as I participated in the Netball club and I also attended the gym on a regular basis. Saying this, I found it hard to be consistant during the end of my studies, which I felt to have a big upset on my mental health.",
+    "Recently, I have started having more of a routine. I attend the gym with Cammy on a regular basis and also go to PT, which has changed not only my physical strength, but my mental strength too.",
+    "I am looking forward to taking part in this challenge and raising awareness to taking mental health seriously."
   ]
 }
 
